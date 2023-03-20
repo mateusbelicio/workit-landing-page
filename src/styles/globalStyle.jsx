@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     font: var(--font-body);
+    color: var(--clr-primary-400);
   }
 
   h1 {
