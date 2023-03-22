@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     font: var(--font-body);
     color: var(--clr-primary-400);
     text-align: center;
+    overflow-x: hidden;
   }
 
   h1 {

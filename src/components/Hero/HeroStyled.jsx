@@ -1,34 +1,40 @@
 import styled from 'styled-components';
+import pattern1 from '../../assets/bg-pattern-1.svg';
+import pattern2 from '../../assets/bg-pattern-2.svg';
 
 export const HeroStyled = styled.div`
   padding-block: 4rem 9.75rem;
-  background-color: var(--clr-primary-400);
   color: var(--clr-neutral-100);
   position: relative;
+  background-image: radial-gradient(
+    150% 100% at 50% 10%,
+    var(--clr-primary-400) 90%,
+    var(--clr-neutral-200) 90%
+  );
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 32em) {
     padding-block: 4rem 12.6875rem;
+
+    &::before {
+      content: url(${pattern1});
+      position: absolute;
+      top: 0;
+      right: 85%;
+      display: block;
+    }
+
+    &::after {
+      content: url(${pattern2});
+      position: absolute;
+      top: 35%;
+      left: 90%;
+      display: block;
+    }
   }
 
   @media screen and (min-width: 60em) {
     padding-block: 4rem 20.375rem;
-  }
-
-  .divider {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
-    color: var(--clr-primary-400);
-
-    svg {
-      position: relative;
-      display: block;
-      width: calc(100%);
-      height: 18px;
-    }
   }
 
   .hero {

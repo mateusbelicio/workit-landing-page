@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterStyled className='footer'>
       <div className='footer__container container grid'>
-        <img src={logoDark} alt='' className='footer__logo' />
+        <img src={logoDark} alt='Workit logo' className='footer__logo' />
         <ul className='footer__social'>
           <li>
             <a href='#' className='footer__link'>

@@ -4,7 +4,7 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <FeaturesStyled className='features section'>
+    <FeaturesStyled className='features'>
       <div className='features__container container'>
         <h2 className='section__title sr-only'>Features</h2>
 

@@ -1,6 +1,13 @@
 import styled from 'styled-components';
+import pattern3 from '../../assets/bg-pattern-3.svg';
 
 export const CallToActionStyled = styled.section`
+  padding-block: 6.875rem 4.625rem;
+
+  @media screen and (min-width: 60em) {
+    padding-block: 6.875rem 7.625rem;
+  }
+
   .cta {
     &__container {
       justify-items: center;
@@ -27,6 +34,57 @@ export const CallToActionStyled = styled.section`
       z-index: 1;
       aspect-ratio: 1;
       width: 17.5625rem;
+    }
+
+    @media screen and (min-width: 32em) {
+      &__container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, min-content) 1fr;
+        column-gap: 0.625rem;
+      }
+
+      &__content {
+        padding: 3rem 3.5rem 3.5rem;
+        gap: 1.5rem;
+
+        grid-column: 4 / -1;
+        grid-row: 2 / -1;
+        text-align: left;
+        align-items: flex-start;
+
+        &::before {
+          content: url(${pattern3});
+          position: absolute;
+          top: 64%;
+          left: 60%;
+          display: block;
+        }
+      }
+
+      &__picture {
+        grid-column: 1 / span 5;
+        grid-row: 1 / span 2;
+        transform: none;
+      }
+    }
+
+    @media screen and (min-width: 60em) {
+      &__container {
+        column-gap: 1.875rem;
+      }
+
+      &__content {
+        padding: 4rem;
+        gap: 2rem;
+
+        grid-column: 5 / -1;
+      }
+
+      &__picture {
+        width: 100%;
+        transform: scale(1.07);
+        transform-origin: left top;
+      }
     }
   }
 

@@ -6,7 +6,7 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <CallToActionStyled className='cta section'>
+    <CallToActionStyled className='cta'>
       <div className='cta__container container grid'>
         <div className='cta__content'>
           <h2 className='section__title'>Be the first to test</h2>

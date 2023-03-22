@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 
 export const FeaturesStyled = styled.section`
-  background-color: var(--clr-neutral-200);
-  padding-top: 9.75rem;
+  background-image: radial-gradient(
+    150% 100% at 50% 10%,
+    var(--clr-neutral-200) 90%,
+    transparent 90%
+  );
+  background-repeat: no-repeat;
+
+  padding-block: 9.75rem 4.3125rem;
 
   @media screen and (min-width: 32em) {
-    padding-top: 12.6875rem;
+    padding-block: 12.6875rem 6.4375rem;
   }
 
   @media screen and (min-width: 60em) {
-    padding-top: 20.375rem;
+    padding-block: 15.9375rem 10.6875rem;
   }
 
   .features {
