@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonStyled = styled.button`
   cursor: pointer;
+  display: inline-block;
   color: currentColor;
   background: transparent;
   border: none;

@@ -15,7 +15,27 @@ const UtilityStyle = createGlobalStyle`
     align-items: center;
   }
 
-  @media screen and (min-width: 1110px) {
+  .section {
+    padding-block-start: 9.75rem;
+  }
+
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+  @media screen and (min-width: 38em) {
+    .container {
+      margin-inline: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
     .container {
       margin-inline: auto;
     }
