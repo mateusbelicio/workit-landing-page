@@ -5,6 +5,10 @@ export const HeaderStyled = styled.header`
   color: var(--clr-neutral-100);
   padding-block: 2rem;
 
+  @media screen and (min-width: 60em) {
+    padding-block: 3.5rem;
+  }
+
   .header {
     &__container {
       justify-content: space-between;

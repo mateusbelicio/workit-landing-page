@@ -49,7 +49,7 @@ export const FeaturesStyled = styled.section`
       }
     }
 
-    @media screen and (min-width: 38em) {
+    @media screen and (min-width: 32em) {
       text-align: left;
 
       &__name {
@@ -86,11 +86,13 @@ export const FeaturesStyled = styled.section`
         grid-template-columns: auto;
         justify-items: center;
         text-align: center;
+        row-gap: 1.75rem;
 
         &::before {
           grid-column: auto;
           grid-row: auto;
           transform: none;
+          margin-bottom: 1.75rem;
         }
       }
     }

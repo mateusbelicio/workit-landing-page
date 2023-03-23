@@ -19,10 +19,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100vh;
+    width: 100%;
     text-rendering: optimizeSpeed;
     font: var(--font-body);
     color: var(--clr-primary-400);
     text-align: center;
+  }
+
+  #root {
     overflow-x: hidden;
   }
 

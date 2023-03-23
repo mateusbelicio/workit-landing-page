@@ -25,7 +25,7 @@ const UtilityStyle = createGlobalStyle`
     width: 1px;
   }
 
-  @media screen and (min-width: 38em) {
+  @media screen and (min-width: 32em) {
     .container {
       margin-inline: 2.5rem;
     }

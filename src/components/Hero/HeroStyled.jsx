@@ -3,7 +3,7 @@ import pattern1 from '../../assets/bg-pattern-1.svg';
 import pattern2 from '../../assets/bg-pattern-2.svg';
 
 export const HeroStyled = styled.div`
-  padding-block: 4rem 9.75rem;
+  padding-block: 2rem 9.75rem;
   color: var(--clr-neutral-100);
   position: relative;
   background-image: radial-gradient(
@@ -14,7 +14,7 @@ export const HeroStyled = styled.div`
   background-repeat: no-repeat;
 
   @media screen and (min-width: 32em) {
-    padding-block: 4rem 12.6875rem;
+    padding-block: 1.5rem 12.6875rem;
 
     &::before {
       content: url(${pattern1});
@@ -34,7 +34,7 @@ export const HeroStyled = styled.div`
   }
 
   @media screen and (min-width: 60em) {
-    padding-block: 4rem 20.375rem;
+    padding-block: 0 20.375rem;
   }
 
   .hero {
@@ -42,6 +42,10 @@ export const HeroStyled = styled.div`
       display: grid;
       row-gap: 3rem;
       justify-items: center;
+
+      @media screen and (min-width: 60em) {
+        row-gap: 2.25rem;
+      }
 
       position: relative;
     }
@@ -54,6 +58,7 @@ export const HeroStyled = styled.div`
 
       @media screen and (min-width: 60em) {
         max-width: 47.9375rem;
+        top: calc(100% + 3.125rem);
       }
     }
 

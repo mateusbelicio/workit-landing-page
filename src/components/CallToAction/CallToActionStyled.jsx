@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import pattern3 from '../../assets/bg-pattern-3.svg';
 
 export const CallToActionStyled = styled.section`
-  padding-block: 6.875rem 4.625rem;
+  padding-block: 6.875rem 2.3125rem;
 
   @media screen and (min-width: 60em) {
-    padding-block: 6.875rem 7.625rem;
+    padding-block: 6.875rem 3.75rem;
   }
 
   .cta {
@@ -36,7 +36,7 @@ export const CallToActionStyled = styled.section`
       width: 17.5625rem;
     }
 
-    @media screen and (min-width: 32em) {
+    @media screen and (min-width: 40em) {
       &__container {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, min-content) 1fr;
@@ -71,6 +71,8 @@ export const CallToActionStyled = styled.section`
     @media screen and (min-width: 60em) {
       &__container {
         column-gap: 1.875rem;
+        grid-template-rows: repeat(7, 1fr);
+        row-gap: 1.25rem;
       }
 
       &__content {
@@ -78,12 +80,14 @@ export const CallToActionStyled = styled.section`
         gap: 2rem;
 
         grid-column: 5 / -1;
+        grid-row: 3 / -1;
       }
 
       &__picture {
         width: 100%;
         transform: scale(1.07);
         transform-origin: left top;
+        grid-row: 1 / span 6;
       }
     }
   }

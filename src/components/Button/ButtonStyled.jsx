@@ -22,6 +22,10 @@ export const ButtonStyled = styled.button`
     border: 2px solid var(--clr-accent-400);
     color: var(--clr-primary-400);
 
+    @media screen and (min-width: 60em) {
+      padding: 1rem 2rem;
+    }
+
     &:hover {
       background-color: transparent;
       color: var(--clr-accent-400);
