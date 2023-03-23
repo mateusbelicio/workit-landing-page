@@ -9,17 +9,17 @@ const Footer = () => {
         <img src={logoDark} alt='Workit logo' className='footer__logo' />
         <ul className='footer__social'>
           <li>
-            <a href='#' className='footer__link'>
+            <a href='#' className='footer__link' aria-label='Link to facebook'>
               <Icon name='facebook' />
             </a>
           </li>
           <li>
-            <a href='#' className='footer__link'>
+            <a href='#' className='footer__link' aria-label='Link to twitter'>
               <Icon name='twitter' />
             </a>
           </li>
           <li>
-            <a href='#' className='footer__link'>
+            <a href='#' className='footer__link' aria-label='Link to instagram'>
               <Icon name='instagram' />
             </a>
           </li>
